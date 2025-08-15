@@ -1,0 +1,123 @@
+/* Estilos básicos para a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+/* Estilo do cabeçalho */
+.cabecalho {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    margin: 0;
+}
+
+.contato-info p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Estilo das abas de navegação */
+.abas {
+    background-color: #0059b3; /* Azul um pouco mais claro */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.abas .aba-link {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.abas .aba-link:hover, .abas .aba-link.active {
+    background-color: #007bff; /* Azul vibrante ao passar o mouse ou quando ativo */
+}
+
+/* Estilo da seção principal e dos produtos */
+.conteudo-principal {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.aba-conteudo {
+    display: none; /* Esconde todas as abas por padrão */
+}
+
+.aba-conteudo.active {
+    display: block; /* Mostra apenas a aba ativa */
+}
+
+h2 {
+    text-align: center;
+    color: #004080;
+}
+
+.produto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.produto img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.produto h3 {
+    color: #004080;
+    margin-top: 0;
+}
+
+.descricao {
+    line-height: 1.6;
+}
+
+.detalhes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.aviso {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+
+/* Estilo do rodapé */
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
