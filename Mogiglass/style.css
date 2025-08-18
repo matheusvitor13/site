@@ -38,7 +38,7 @@ body {
 
 /* Estilo das abas de navegação */
 .abas {
-    background-color: #0059b3; /* Azul um pouco mais claro */
+    background-color: #0059b3;
     display: flex;
     justify-content: center;
     padding: 0;
@@ -54,7 +54,17 @@ body {
 }
 
 .abas .aba-link:hover, .abas .aba-link.active {
-    background-color: #007bff; /* Azul vibrante ao passar o mouse ou quando ativo */
+    background-color: #007bff;
+}
+
+/* Esconde todas as abas por padrão */
+.aba-conteudo {
+    display: none;
+}
+
+/* Mostra apenas a aba ativa */
+.aba-conteudo.active {
+    display: block;
 }
 
 /* Estilo da seção principal e dos produtos */
@@ -62,14 +72,6 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
-}
-
-.aba-conteudo {
-    display: none; /* Esconde todas as abas por padrão */
-}
-
-.aba-conteudo.active {
-    display: block; /* Mostra apenas a aba ativa */
 }
 
 h2 {
